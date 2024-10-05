@@ -11,12 +11,11 @@
   border-radius: 2px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-  background: #fff;
+  background: #3FAF82;
   color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to bottom left, rgba(76,178,196,255), rgba(68,63,161,255))
 }
 
 .center {
@@ -25,11 +24,144 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.p {
-  font-weight: bold;
-  color: white;
-  display: flex;
+.center1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+display: flex;
+  align-items: center;
   justify-content: center;
-  transform: scale(1.5);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+  
+
+.menu-icon {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.mnu1 {
+
+background-color: white;
+height: 40px;
+width: 200px;
+
+border-radius: 10px;
+box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+position: absolute;
+animation: UP 2s ease;
+animation-iteration-count: 1;
+animation: UP1 2s ease;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+}
+
+.mnu2 {
+  background-color: white;
+
+  height: 40px;
+  width: 200px;
+ 
+  border-radius: 10px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  position: absolute;
+  animation: disappear 1s ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  
+}
+
+
+
+.mnu3 {
+ 
+background-color: white;
+height: 40px;
+width: 200px;
+border-radius: 10px;
+box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+position: absolute;
+animation: DOWN 2s ease;
+animation-iteration-count: 1;
+animation: DOWN1 2s ease;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+}
+
+@keyframes UP {
+  0% {animation-delay: 0.5s;
+  margin: 360;}
+
+ 
+  50% {
+    top: 0;
+  }
+
+100% {
+  top: 60px;
+}
+}
+
+
+
+
+@keyframes DOWN {
+  0% {animation-delay: 0.5;
+    margin: 360px;}
+  
+  50% {top: 0;}
+100% {top: -60px;}
+ 
+}
+
+
+
+@keyframes disappear {
+  0%   {
+   
+    top: -60px;
+    opacity: 1; /* Pause */}
+    20%   {
+      top: -60px;
+      opacity: 1; /* Pause */}
+      40%   {
+        top: -60px;
+        opacity: 1; /* Pause */}
+  70% {opacity: 1;
+  }
+  100% {opacity: 0;}
+}
+@keyframes UP1 {
+  0% {
+    
+    animation-delay: 0.5s;}
+  50%{
+    top:0px;
+  }
+  100% {
+    rotate: -45deg;
+    margin: 0;
+  }
+}
+@keyframes DOWN1 {
+  0%{
+    animation-delay: 0.5s;
+  }
+  50%{
+    top:0px;
+  }
+  100% {
+    rotate: 45deg;
+    margin: 0;
+  }
+}
+
